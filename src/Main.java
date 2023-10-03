@@ -83,6 +83,22 @@ public class Main {
         System.out.println("Ket qua: " + d.Dem());
         sc.close();
     }
+    public static void Bai11() {
+        System.out.println("Nhap n: ");
+        TBCSoLe t = new TBCSoLe();
+        Scanner sc = new Scanner(System.in);
+        t.setn(sc.nextInt());
+        System.out.println("Ket qua: " + t.Tinh());
+        sc.close();
+    }
+    public static void Bai12() {
+        System.out.println("Nhap n: ");
+        TBCSoChan t = new TBCSoChan();
+        Scanner sc = new Scanner(System.in);
+        t.setn(sc.nextInt());
+        System.out.println("Ket qua: " + t.Tinh());
+        sc.close();
+    }
     public static void Chon(){
         System.out.println("Chọn bài: ");
         System.out.println("1. Nhập 1 số nguyên n. Tính n!.");
@@ -95,6 +111,8 @@ public class Main {
         System.out.println("8. Nhập 1 số nguyên n. Tính trung bình cộng các chữ số của n.");
         System.out.println("9. Nhập 1 số nguyên n. Đếm số lượng chữ số lẻ của n.");
         System.out.println("10. Nhập 1 số nguyên n. Đếm số lượng chữ số chẵn của n.");
+        System.out.println("11. Nhập 1 số nguyên n. Tính trung bình cộng các chữ số lẻ của n.");
+        System.out.println("12. Nhập 1 số nguyên n. Tính trung bình cộng các chữ số chẵn của n.");
         Scanner sc = new Scanner(System.in);
             switch (sc.nextInt()){
                 case 1:{
@@ -135,6 +153,14 @@ public class Main {
                 }
                 case 10:{
                     Bai10();
+                    break;
+                }
+                case 11:{
+                    Bai11();
+                    break;
+                }
+                case 12:{
+                    Bai12();
                     break;
                 }
                 default:
